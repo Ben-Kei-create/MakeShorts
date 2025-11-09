@@ -7,11 +7,11 @@ credentials/*
 # Generated packages & outputs
 output/*
 !output/.gitkeep
-packages/
 
 # Environment files
 .env
 *.env
+config/.env
 
 # Python
 __pycache__/
