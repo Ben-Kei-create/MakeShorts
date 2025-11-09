@@ -1,0 +1,717 @@
+{
+  "package": {
+    "person": "ウォルト・ディズニー",
+    "duration_sec": 1260,
+    "format": "16:9",
+    "tone": "dramatic/educational/emotional",
+    "emotion_curve": [
+      { "chapter_index": 0, "level": 3 },
+      { "chapter_index": 1, "level": 4 },
+      { "chapter_index": 2, "level": 6 },
+      { "chapter_index": 3, "level": 8 },
+      { "chapter_index": 4, "level": 5 },
+      { "chapter_index": 5, "level": 3 },
+      { "chapter_index": 6, "level": 8 },
+      { "chapter_index": 7, "level": 4 },
+      { "chapter_index": 8, "level": 2 },
+      { "chapter_index": 9, "level": 1 },
+      { "chapter_index": 10, "level": 6 },
+      { "chapter_index": 11, "level": 4 }
+    ],
+    "music_prompt": "Epic orchestral score blending nostalgia and triumph, opening with solo piano melody evolving into full symphonic arrangement with strings, brass fanfares, and subtle jazz influences reflecting 1920s-1960s American optimism, incorporating moments of introspective solo violin for biographical reflection, building to triumphant finale with choir, 21 minutes dynamic composition",
+    "thumbnails": [
+      {
+        "slot": "opening",
+        "index": 1,
+        "still_prompt": "Silhouette of ambitious entrepreneur standing before massive studio backlot at golden hour, dramatic volumetric light rays piercing through industrial architecture, film grain texture, cinematic wide angle, Rembrandt lighting creating deep shadows, vintage 1920s period atmosphere",
+        "motion_prompt": "Slow pushing dolly shot moving toward silhouetted figure as golden light intensifies, gentle lens flares emerge, subtle parallax effect on background buildings, ethereal dust particles floating through light beams, camera rises slightly revealing expansive creative empire"
+      },
+      {
+        "slot": "opening",
+        "index": 2,
+        "still_prompt": "Extreme close-up of weathered hands sketching animated character concepts on yellowed paper, harsh spotlight illuminating workspace cluttered with ink bottles and reference photographs, smoke wisps from off-frame cigarette, noir-inspired chiaroscuro lighting, shallow depth of field",
+        "motion_prompt": "Overhead crane shot slowly descending toward drafting table, hands continue sketching with confident strokes, camera circles 180 degrees revealing wall covered with concept art and storyboards, warm practical lamp light creates dancing shadows"
+      },
+      {
+        "slot": "opening",
+        "index": 3,
+        "still_prompt": "Vintage film projector casting bright beam through darkness onto blank screen, mechanical reels turning, golden age Hollywood aesthetic, art deco theater interior barely visible in shadows, dust particles illuminated in projection beam, cinematic aspect ratio framing",
+        "motion_prompt": "Static shot as projector light intensifies, beam widens, flickering celluloid creates stroboscopic effect, silhouettes of excited audience members gradually appear in foreground, anticipation building through lighting transition from darkness to brilliant projection glow"
+      },
+      {
+        "slot": "chapter1",
+        "index": 1,
+        "still_prompt": "Rural Midwestern farmhouse at dawn 1901, wooden structure weathered by prairie winds, dramatic side lighting creating long shadows across dirt yard, horse-drawn wagon visible, period-accurate architecture, desaturated earth tones, wide establishing shot, melancholic atmosphere",
+        "motion_prompt": "Slow tracking shot approaching farmhouse from distant field, morning mist dissipating as camera advances, subtle zoom intensifying focus on humble dwelling, golden hour light gradually warming color palette, evoking early 20th century hardship and simplicity"
+      },
+      {
+        "slot": "chapter1",
+        "index": 2,
+        "still_prompt": "Young boy's hands holding crude pencil drawings of barnyard animals, harsh overhead light on kitchen table surface, simple wooden chair visible, authentically aged paper texture, tight framing emphasizing childhood creativity, warm practical lighting suggesting oil lamp illumination",
+        "motion_prompt": "Slow pushing dolly shot moving toward silhouetted figure as golden light intensifies, gentle lens flares emerge, subtle parallax effect on background buildings, ethereal dust particles floating through light beams, camera rises slightly revealing expansive creative empire"
+      },
+      {
+        "slot": "chapter1",
+        "index": 3,
+        "still_prompt": "Newspaper boy uniform from 1910s era, canvas bag heavy with papers, Chicago street corner intersection visible in soft focus background, overcast diffused lighting, documentary-style composition, authentic period costume and props, photojournalistic framing",
+        "motion_prompt": "Handheld documentary-style shot following young newspaper vendor through bustling urban intersection, camera weaves through period-dressed pedestrians, shallow focus tracking subject's determined stride, kinetic energy suggesting formative work ethic and urban exposure"
+      },
+      {
+        "slot": "chapter2",
+        "index": 1,
+        "still_prompt": "WWI Red Cross ambulance driver's helmet and uniform laid on wooden crate, French countryside visible through barn doorway, diffused overcast lighting, muted color grading, authentic 1918 military equipment, compositional emphasis on duty and service, melancholic tone",
+        "motion_prompt": "Slow push-in shot from wide establishing view of equipment to intimate close-up of insignia, camera movement suggests reverent examination, subtle rack focus from foreground uniform to distant war-torn landscape, somber pacing reflecting wartime gravity"
+      },
+      {
+        "slot": "chapter2",
+        "index": 2,
+        "still_prompt": "Small commercial art studio workspace 1920 Kansas City, drafting tables with mechanical drawing tools, advertisement sketches pinned to walls, industrial pendant lighting, authentically aged paper texture, tight framing emphasizing childhood creativity, warm practical lighting suggesting oil lamp illumination",
+        "motion_prompt": "Sweeping pan across cluttered studio revealing multiple workstations, camera pauses on various commercial illustration projects, dynamic movement suggesting bustling creative energy, natural window light creates realistic working environment, youthful ambition palpable in composition"
+      },
+      {
+        "slot": "chapter2",
+        "index": 3,
+        "still_prompt": "Vintage animation camera rig with hand-drawn cel frames, primitive studio lighting setup, exposed brick wall background, technical equipment from 1920s animation industry, dramatic side lighting creating strong shadows, pioneering spirit suggested through composition",
+        "motion_prompt": "Slow circular tracking shot around animation stand, camera reveals layered cel artwork, manual cranking mechanism shown in detailed close-up, lighting shifts emphasizing mechanical ingenuity, movement builds anticipation for animated sequences to come"
+      },
+      {
+        "slot": "chapter3",
+        "index": 1,
+        "still_prompt": "Hollywood sign visible on distant hills through smoggy 1923 atmosphere, downtown Los Angeles street level perspective, period automobiles, art deco architecture emerging, golden hour backlight creating hazy atmospheric depth, wide cinematic framing suggesting arrival and ambition",
+        "motion_prompt": "Long dolly shot moving forward through 1920s Los Angeles street, camera rises gradually revealing iconic hillside landmark, parallax effect on buildings creates depth, color grading shifts from cool shadows to warm sunlit promise, suggesting westward journey completion"
+      },
+      {
+        "slot": "chapter3",
+        "index": 2,
+        "still_prompt": "Cramped garage animation studio, makeshift animation stand constructed from salvaged materials, single bare bulb overhead, sketches scattered across makeshift workspace, authentic poverty-era startup aesthetic, harsh practical lighting, tight framing emphasizing limited resources",
+        "motion_prompt": "Handheld camera exploring confined workspace with documentary intimacy, pausing on improvised equipment, subtle push-in on determined artist's hands continuing work despite limitations, lighting flickers suggesting unstable electrical supply, resilience embodied through composition"
+      },
+      {
+        "slot": "chapter3",
+        "index": 3,
+        "still_prompt": "Vintage theater marquee announcing animated short screening, 1928 art deco design, nighttime exterior with practical bulb lighting creating glamorous glow, period-dressed crowd queuing below, wide angle capturing cultural moment, excited energy palpable in composition",
+        "motion_prompt": "Crane shot descending from marquee signage down to enthusiastic crowd, camera weaves through moviegoers, captures excited faces in warm theater lighting, movement builds toward entrance suggesting watershed cultural moment, jazz age energy in pacing"
+      },
+      {
+        "slot": "chapter4",
+        "index": 1,
+        "still_prompt": "Extreme close-up of synchronized sound recording equipment 1928, optical soundtrack visible on film strip, technical precision emphasized through macro photography, dramatic spotlight illuminating machinery, revolutionary technology rendered with reverence, shallow depth of field",
+        "motion_prompt": "Slow tracking shot along sound synchronization apparatus, camera pauses on rotating components, rack focus reveals precise mechanical alignment, subtle vibration suggests active recording, technical innovation portrayed through intimate mechanical choreography"
+      },
+      {
+        "slot": "chapter4",
+        "index": 2,
+        "still_prompt": "Packed movie palace audience reaction shot, silhouettes illuminated by flickering screen light, art deco theater interior details visible, dramatic chiaroscuro lighting, wide angle capturing collective astonishment, cultural paradigm shift frozen in single frame",
+        "motion_prompt": "Slow pan across theater audience faces, screen light creates dynamic shadows dancing across astonished expressions, camera movement pauses on key reactions, color temperature shifts suggesting synchronized sound breakthrough moment, emotional crescendo in pacing"
+      },
+      {
+        "slot": "chapter4",
+        "index": 3,
+        "still_prompt": "Recording studio interior 1929, early microphone suspended from ceiling, sound dampening materials visible, musicians and voice actors in period costume, warm tungsten lighting, documentary-style composition capturing historic recording session, collaborative energy evident",
+        "motion_prompt": "Dolly shot circling recording session, camera captures performers' concentration, pauses on conductor coordinating audio and visual timing, subtle zoom emphasizing groundbreaking synchronization process, vintage recording equipment showcased through careful framing"
+      },
+      {
+        "slot": "chapter5",
+        "index": 1,
+        "still_prompt": "Bankruptcy notice document on mahogous desk surface, harsh overhead lighting, legal papers scattered, fountain pen abandoned mid-signature, tight framing emphasizing financial devastation, desaturated color palette, noir-inspired dramatic shadows conveying crisis",
+        "motion_prompt": "Slow push-in on distressing legal documents, camera movement suggests inevitable approach of financial ruin, rack focus from foreground papers to background family photograph, emotional weight conveyed through deliberate pacing, somber lighting transition"
+      },
+      {
+        "slot": "chapter5",
+        "index": 2,
+        "still_prompt": "Empty animation studio at night, abandoned drafting tables with half-finished artwork, single desk lamp creating pool of light in darkness, long shadows suggesting desolation, wide angle emphasizing hollow space, melancholic atmosphere of creative dreams interrupted",
+        "motion_prompt": "Slow tracking shot through darkened studio, camera pauses at each abandoned workstation, gentle push-in on unfinished sketches, practical lighting creates isolated pools of illumination, movement evokes haunting absence and uncertain future"
+      },
+      {
+        "slot": "chapter5",
+        "index": 3,
+        "still_prompt": "Hands clutching contract documents, extreme close-up showing tension in grip, harsh spotlight creating dramatic shadows on paper text,. legal terminology visible, shallow depth of field, noir-inspired lighting suggesting negotiation pressure and rights disputes",
+        "motion_prompt": "Tight handheld shot on trembling hands reviewing contract clauses, camera subtly shakes suggesting emotional stress, rack focus between signature line and devastating terms, lighting intensifies suggesting trapped situation, visceral physicality of creative loss"
+      },
+      {
+        "slot": "chapter6",
+        "index": 1,
+        "still_prompt": "Technicolor three-strip camera rig, revolutionary film technology from 1932, dramatic side lighting revealing complex prism system, technical marvel rendered with reverence, tight framing on mechanical precision, warm color temperature suggesting golden age innovation",
+        "motion_prompt": "Slow circular dolly around Technicolor camera, light plays across complex mechanisms, subtle zoom reveals intricate color separation prisms, camera movement builds reverence for technological breakthrough, color grading shifts from monochrome memory to vibrant possibility"
+      },
+      {
+        "slot": "chapter6",
+        "index": 2,
+        "still_prompt": "Academy Award Oscar statuette catching spotlight on presentation podium, 1932 ceremony aesthetic, art deco background details, dramatic key lighting creating golden glow, tight framing emphasizing achievement symbol, triumphant composition",
+        "motion_prompt": "Slow push-in on gleaming award statue, spotlight intensifies creating lens flare, shallow depth of field background reveals applauding audience silhouettes, camera movement builds emotional crescendo, golden lighting suggests career vindication"
+      },
+      {
+        "slot": "chapter6",
+        "index": 3,
+        "still_prompt": "Bustling expanded studio lot 1935, multiple soundstages visible, period automobiles parked outside buildings, wide establishing shot, golden hour lighting creating long shadows, cinematic scope suggesting empire building, optimistic atmosphere of creative expansion",
+        "motion_prompt": "Aerial crane shot rising above studio complex, camera rotates revealing sprawling facilities, zoom out emphasizing scale of operation, warm afternoon light bathes growing enterprise, movement suggests creative empire reaching full power"
+      },
+      {
+        "slot": "chapter7",
+        "index": 1,
+        "still_prompt": "Full-length animated feature storyboard wall, hundreds of sequential sketches pinned in narrative order, dramatic side lighting creating depth, tight color-coded organization visible, wide angle capturing unprecedented scope, ambitious undertaking evident in composition",
+        "motion_prompt": "Slow tracking shot along massive storyboard array, camera pauses on key narrative moments, subtle push-in emphasizes dramatic sequences, lighting shifts highlighting emotional beats, movement conveys epic storytelling ambition never before attempted"
+      },
+      {
+        "slot": "chapter7",
+        "index": 2,
+        "still_prompt": "Animation cel painting department, rows of artists applying watercolor to celluloid sheets, north-facing window light creating even illumination, period 1937 workspace, documentary-style composition, meticulous craftsmanship emphasized through framing",
+        "motion_prompt": "Sweeping dolly shot through painting department, camera pauses on detailed brushwork, reveals scale of collaborative artistry, natural lighting creates authentic working environment, movement emphasizes unprecedented production scope and artistic dedication"
+      },
+      {
+        "slot": "chapter7",
+        "index": 3,
+        "still_prompt": "Carthay Circle Theatre premiere night 1937, searchlights piercing evening sky, glamorous Hollywood premiere aesthetic, period formal attire, art deco architecture, wide establishing shot, golden age glamour palpable, cultural event significance in composition",
+        "motion_prompt": "Crane shot descending from searchlight beams to red carpet arrivals, camera captures premiere excitement, sweeping movement through celebrity guests, practical lighting creates authentic Hollywood glamour, pacing builds anticipation for historic screening"
+      },
+      {
+        "slot": "chapter8",
+        "index": 1,
+        "still_prompt": "Labor strike picket signs outside studio gates 1941, harsh midday sunlight creating stark shadows, period protest aesthetics, documentary photojournalism style, wide angle capturing confrontation, desaturated color palette emphasizing conflict, tense atmosphere",
+        "motion_prompt": "Handheld documentary shot moving through picket line, camera captures angry faces and protest signs, kinetic energy suggesting volatile situation, natural lighting creates harsh realism, movement evokes journalism capturing historic labor dispute"
+      },
+      {
+        "slot": "chapter8",
+        "index": 2,
+        "still_prompt": "World War II propaganda production materials, patriotic imagery sketches, government contract documents, dramatic overhead lighting on work table, 1942 wartime aesthetic, tight framing on creative duty, red-white-blue color accents, purposeful composition",
+        "motion_prompt": "Slow push-in on wartime production materials, camera reveals shift from entertainment to propaganda, lighting intensifies on patriotic symbols, movement suggests creative mission redirected, color grading emphasizes wartime urgency and national service"
+      },
+      {
+        "slot": "chapter8",
+        "index": 3,
+        "still_prompt": "Financial ledger showing debt figures, red ink prominent, harsh spotlight on damning numbers, period accounting documents, extreme close-up emphasizing economic crisis, noir-inspired dramatic lighting, compositional weight of financial burden",
+        "motion_prompt": "Slow zoom on devastating financial figures, camera movement suggests inexorable approach of bankruptcy threat, rack focus between debt totals and asset columns, lighting darkens emphasizing dire situation, deliberate pacing conveys existential business crisis"
+      },
+      {
+        "slot": "chapter9",
+        "index": 1,
+        "still_prompt": "Disneyland construction site aerial view 1954, orange groves being transformed, heavy machinery visible, Anaheim California landscape, documentary construction photography style, golden hour lighting, wide establishing shot suggesting audacious vision becoming reality",
+        "motion_prompt": "Helicopter aerial shot circling massive construction site, camera reveals scope of transformation from farmland to theme park, crane movement emphasizes unprecedented scale, afternoon light creates long shadows of emerging structures, visionary ambition palpable"
+      },
+      {
+        "slot": "chapter9",
+        "index": 2,
+        "still_prompt": "Opening day crowds flooding through entrance gates July 1955, period 1950s fashion, families with children, practical daylight photography, wide angle capturing cultural phenomenon, joyful atmosphere, documentary-style composition recording historic moment",
+        "motion_prompt": "Sweeping crane shot descending into enthusiastic crowds, camera captures excited faces entering revolutionary theme park, movement weaves through families, natural lighting creates authentic documentary feel, pacing conveys unprecedented public enthusiasm"
+      },
+      {
+        "slot": "chapter9",
+        "index": 3,
+        "still_prompt": "Television production set 1954, early color broadcast cameras, studio lighting rigs visible, host positioned at desk, behind-the-scenes technical setup, wide angle revealing television revolution infrastructure, golden age broadcasting aesthetic",
+        "motion_prompt": "Dolly shot moving through television studio setup, camera reveals technical innovation of weekly broadcast production, pauses on broadcast equipment, lighting shifts from practical studio to screen glow, movement emphasizes multimedia empire expansion"
+      },
+      {
+        "slot": "chapter10",
+        "index": 1,
+        "still_prompt": "Florida swampland aerial view 1965, vast undeveloped wilderness, surveying equipment visible, wide establishing shot suggesting blank canvas, golden hour lighting, cinematic scope, final visionary project evident in compositional scale",
+        "motion_prompt": "Slow aerial tracking shot across Florida wilderness, camera reveals massive scale of secret land acquisition, zoom out emphasizing unprecedented scope, warm afternoon light suggests legacy project beginning, movement conveys final ambitious dream"
+      },
+      {
+        "slot": "chapter10",
+        "index": 2,
+        "still_prompt": "Hospital room window view 1966, soft diffused overcast light, medical equipment barely visible in shadows, melancholic atmosphere, tight framing on window overlooking cityscape, desaturated color palette, contemplative composition suggesting mortality",
+        "motion_prompt": "Slow push-in toward hospital window, camera movement gentle and reverent, rack focus from foreground medical details to distant city view, lighting gradually dims, pacing creates elegiac mood reflecting final days"
+      },
+      {
+        "slot": "chapter10",
+        "index": 3,
+        "still_prompt": "Empty creative office at dusk, desk lamp creating warm pool of light, unfinished project sketches visible, personal photographs on walls, wide angle capturing absence, golden hour through windows, poignant composition of legacy and loss",
+        "motion_prompt": "Slow dolly through empty office space, camera pauses on personal mementos and unfinished visions, natural twilight fading creates metaphorical darkness, movement suggests final walkthrough, lighting transition from warm memory to somber conclusion"
+      },
+      {
+        "slot": "ending",
+        "index": 1,
+        "still_prompt": "Theme park castle silhouette at sunset, dramatic backlight creating iconic profile, long shadows across empty plaza, golden hour atmosphere, wide cinematic framing, legacy architecture rendered with reverence, timeless composition",
+        "motion_prompt": "Slow crane shot rising behind castle structure, camera movement reveals sunset backlighting creating glowing edges, subtle zoom emphasizes enduring symbol, color grading shifts to warm nostalgic tones, movement suggests transcendent legacy"
+      },
+      {
+        "slot": "ending",
+        "index": 2,
+        "still_prompt": "Montage of global theme park locations, aerial establishing shots, international landmarks visible, wide geographic diversity, golden hour lighting unified across locations, cinematic scope, worldwide impact evident in compositional breadth",
+        "motion_prompt": "Quick cutting aerial montage across international park locations, camera movement consistent across diverse geographies, lighting unified in warm tones, pacing accelerates showing global reach, movement emphasizes unprecedented cultural impact"
+      },
+      {
+        "slot": "ending",
+        "index": 3,
+        "still_prompt": "Vintage animation desk with single lamp illuminating blank paper, metaphorical composition, warm practical lighting creating intimate spotlight, tight framing emphasizing creative origin point, reflective atmosphere, circular narrative suggested",
+        "motion_prompt": "Slow push-in on empty drafting table, single light source creates focused illumination on blank page suggesting infinite possibility, camera movement deliberate and contemplative, lighting fades gradually, final image returns to creative genesis moment"
+      }
+    ],
+    "script": {
+      "chapters": [
+        {
+          "id": "opening",
+          "title": "夢を描いた男の序章",
+          "time": { "start": "00:00", "end": "01:30", "duration_sec": 90 },
+          "narration": "20世紀のアメリカ文化を変えた一人の男がいた。\n彼は何度も失敗し、裏切られ、破産の淵に立った。\nしかし彼は諦めなかった。\n彼の名はウォルト・ディズニー。\n\n一枚の紙とペン。\nそこから始まった物語は、やがて世界中の子どもたちの心を掴む帝国へと成長する。\n彼が創り出したのは単なる娯楽ではない。\n夢を信じる力そのものだった。\n\nこれは栄光と挫折、創造と喪失を繰り返した男の物語である。\n彼がいかにして不可能を可能にし、そして何を代償として支払ったのか。\n21分間、その人生の光と影を追う。\n\n夢は、どこから生まれるのか。\nこの問いへの答えが、今、始まる。",
+          "visual_cues": [
+            "オープニングは逆光のシルエットから開始、スタジオ施設の巨大さを強調",
+            "手描きのスケッチがクローズアップで映り、鉛筆の動きを追う",
+            "ヴィンテージの映写機が光を放ち、暗闇の中で観客のシルエットが浮かび上がる",
+            "フィルムグレイン効果で1920年代の質感を再現",
+            "ゴールデンアワーの光が創造の象徴として機能"
+          ],
+          "overlays": {
+            "chapter_title_3s": "夢を描いた男の序章",
+            "dates": [],
+            "numbers": [],
+            "quotes": [],
+            "people_first_appearance": ["ウォルト・ディズニー"],
+            "locations": []
+          },
+          "audio": {
+            "bgm_tag": "epic",
+            "sfx": ["film projector whir", "pencil scratching on paper", "distant crowd murmur"]
+          },
+          "facts": [
+            { "type": "date", "value": "1901-12-05", "note": "ウォルト・ディズニー生誕" },
+            { "type": "number", "value": "20世紀", "note": "彼が影響を与えた時代" }
+          ],
+          "sources": [
+            { "title": "Walt Disney: The Triumph of the American Imagination", "author": "Neal Gabler", "year": "2006", "url": null, "note": "包括的伝記" }
+          ],
+          "lesson": "偉大な創造は、一枚の紙から始まる。"
+        },
+        {
+          "id": "chapter1",
+          "title": "第1章: 中西部の少年 (1901–1917)",
+          "time": { "start": "01:30", "end": "04:00", "duration_sec": 150 },
+          "narration": "1901年12月5日、イリノイ州シカゴに一人の男児が生まれた。\n名はウォルター・イライアス・ディズニー。\n父イライアスは厳格な労働者。\n母フローラは穏やかだが貧しい家庭を支えた。\n\n一家はすぐにミズーリ州マーセリンの農場へ移住する。\n広大なトウモロコシ畑。\n家畜の鳴き声。\n少年ウォルトはそこで動物たちを観察し、紙にスケッチを繰り返した。\n彼の最初の「観客」は農場の豚と鶏だったと言われている。\n\n1910年、一家は再びカンザスシティへ移る。\nウォルトは早朝の新聞配達で家計を助けた。\n時に氷点下の寒さの中、少年は重い新聞袋を抱えて街を歩いた。\n学校では居眠りをし、教師に叱られることもあった。\nしかし彼の手は止まらない。\nノートの余白には常に落書きが溢れていた。\n\n1917年、16歳のウォルトは第一次世界大戦に志願しようとする。\n年齢を偽り、赤十字の救急車運転手としてフランスへ渡った。\n戦場では負傷兵を運び、死と隣り合わせの日々を過ごす。\nそこで彼が見たのは、人間の脆さと、それでも生きようとする意志だった。\n\nこの少年時代の経験が、後の彼の作品に深く刻まれることになる。\n苦労、観察、そして終わらない創造への渇望。\nすべてはここから始まった。",
+          "visual_cues": [
+            "1901年の中西部農家、木造建築と広大な農地の空撮",
+            "少年の手が動物のスケッチを描くクローズアップ、テーブル上の古びた紙",
+            "1910年代シカゴの街角、新聞配達少年の制服とキャンバス鞄",
+            "第一次大戦のフランス、赤十字救急車と泥濘の道路",
+            "デサチュレートされた色調で時代の厳しさを表現"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第1章: 中西部の少年",
+            "dates": ["1901-12-05", "1910", "1917"],
+            "numbers": ["16歳"],
+            "quotes": [],
+            "people_first_appearance": ["イライアス・ディズニー", "フローラ・ディズニー"],
+            "locations": ["シカゴ", "マーセリン", "カンザスシティ", "フランス"]
+          },
+          "audio": {
+            "bgm_tag": "uplifting",
+            "sfx": ["farm animals", "newspaper rustle", "distant train whistle", "wind through prairie grass"]
+          },
+          "facts": [
+            { "type": "date", "value": "1901-12-05", "note": "ウォルト・ディズニー誕生" },
+            { "type": "date", "value": "1917", "note": "第一次大戦に赤十字運転手として参加" },
+            { "type": "number", "value": "16歳", "note": "年齢を偽って戦地へ" }
+          ],
+          "sources": [
+            { "title": "The Animated Man: A Life of Walt Disney", "author": "Michael Barrier", "year": "2007", "url": null, "note": "初期人生の詳細な記録" },
+            { "title": "Walt Disney: An American Original", "author": "Bob Thomas", "year": "1976", "url": null, "note": "公式伝記に基づく" }
+          ],
+          "lesson": "創造性は、どんな環境でも芽吹く。"
+        },
+        {
+          "id": "chapter2",
+          "title": "第2章: 商業美術との出会い (1919–1922)",
+          "time": { "start": "04:00", "end": "06:30", "duration_sec": 150 },
+          "narration": "1919年、戦地から戻ったウォルトは18歳。\n彼はカンザスシティで商業美術家としての道を歩み始める。\nペスメン・ルービン商業美術スタジオ。\n月給50ドルの見習い職だった。\n\nそこで運命の出会いが起きる。\n同僚のアブ・アイワークス。\n無口だが天才的な描画力を持つ青年だった。\n二人は意気投合し、やがて独立を決意する。\n\n1920年、「アイワークス・ディズニー商業美術家」を設立。\nしかし現実は厳しかった。\n顧客はほとんど来ない。\n家賃も払えず、わずか数ヶ月で廃業を余儀なくされる。\n\nウォルトはカンザスシティ・フィルム・アド社に職を得た。\n広告用の短編アニメーション制作会社だった。\nここで彼は初めて「動く絵」の魔法を目にする。\n1コマ1コマ、手描きの絵が命を吹き込まれる瞬間。\n彼は夢中になった。\n\n夜な夜な、ウォルトは会社の機材を借りて実験を繰り返した。\nアニメーションの原理を独学で学び、自らの短編を制作し始める。\n1922年、彼は「ラフ・オー・グラム・スタジオ」を設立。\nわずかな資金と、借りた機材。\nそれでも彼は短編おとぎ話アニメーションの制作を開始した。\n\nしかし、またしても資金は尽きる。\nスタジオは1923年に倒産。\nウォルトは二度目の失敗を経験する。\n\nだが彼の中で、ある確信が芽生えていた。\nアニメーションこそが、自分の人生を賭けるべき領域だと。",
+          "visual_cues": [
+            "1920年代のカンザスシティ、商業美術スタジオの室内、ドラフティングテーブルと吊り下げランプ",
+            "手描きのセル画と初期アニメーション機材のクローズアップ",
+            "夜間の作業風景、裸電球一つの薄暗いガレージスタジオ",
+            "倒産通知書類と空になった作業机",
+            "期間の服装と小道具で1920年代を再現"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第2章: 商業美術との出会い",
+            "dates": ["1919", "1920", "1922", "1923"],
+            "numbers": ["月給50ドル", "18歳"],
+            "quotes": [],
+            "people_first_appearance": ["アブ・アイワークス"],
+            "locations": ["カンザスシティ"]
+          },
+          "audio": {
+            "bgm_tag": "uplifting",
+            "sfx": ["pencil on paper", "animation camera crank", "film reel clicking", "office door closing"]
+          },
+          "facts": [
+            { "type": "date", "value": "1919", "note": "ペスメン・ルービン社で商業美術家として働き始める" },
+            { "type": "date", "value": "1922", "note": "ラフ・オー・グラム・スタジオ設立" },
+            { "type": "number", "value": "月給50ドル", "note": "最初の見習い職の給与" },
+            { "type": "date", "value": "1923", "note": "スタジオ倒産" }
+          ],
+          "sources": [
+            { "title": "Walt Disney: The Triumph of the American Imagination", "author": "Neal Gabler", "year": "2006", "url": null, "note": "初期キャリアの詳細" },
+            { "title": "The Hand Behind the Mouse", "author": "Leslie Iwerks & John Kenworthy", "year": "2001", "url": null, "note": "アイワークスとの関係" }
+          ],
+          "lesson": "失敗は、次の扉を開く鍵である。"
+        },
+        {
+          "id": "chapter3",
+          "title": "第3章: ハリウッドへの賭け (1923–1927)",
+          "time": { "start": "06:30", "end": "09:00", "duration_sec": 150 },
+          "narration": "1923年7月、ウォルトは40ドルと未完成のフィルムを抱えてハリウッドへ向かう。\n兄ロイがすでに西海岸にいた。\n兄弟は再会し、小さなガレージでスタジオを再建する。\n「ディズニー・ブラザーズ・スタジオ」の誕生だった。\n\nウォルトは配給業者マーガレット・ウィンクラーと契約を結ぶ。\n「アリス・コメディ」シリーズ。\n実写の少女とアニメーションを合成する実験的作品だった。\n1本あたり1,500ドルの契約。\nようやく安定した収入を得る。\n\n1924年、ウォルトはスタジオの女性インク係、リリアン・バウンズと結婚。\n彼女は生涯、ウォルトを支え続けることになる。\n\nスタジオは成長し、従業員も増えた。\nアブ・アイワークスもハリウッドに呼び寄せる。\n制作ペースは加速し、技術も向上していった。\n\n1927年、ウォルトは新キャラクター「オズワルド・ザ・ラッキー・ラビット」を生み出す。\n長い耳を持つウサギのキャラクター。\n観客の反応は上々だった。\n配給会社ユニバーサルとの契約も順調に見えた。\n\nしかし、ウォルトは知らなかった。\n契約の細則に、致命的な罠が潜んでいることを。\n彼が創造したキャラクターの権利は、実は自分のものではなかった。\n\n成功の絶頂で、暗雲が近づいていた。\nハリウッドの夢は、まだ試練の途中だった。",
+          "visual_cues": [
+            "1923年ロサンゼルス、ハリウッドサインが遠景に霞む、ダウンタウンの街路",
+            "質素なガレージスタジオ、即席のアニメーション台と裸電球",
+            "1920年代の映画館マーキー、アールデコ様式の外観、夜間の電飾",
+            "契約書類のクローズアップ、万年筆とインク瓶",
+            "スタジオ拡大の様子、複数の作業机と増えたスタッフ"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第3章: ハリウッドへの賭け",
+            "dates": ["1923-07", "1924", "1927"],
+            "numbers": ["40ドル", "1,500ドル"],
+            "quotes": [],
+            "people_first_appearance": ["ロイ・ディズニー", "リリアン・バウンズ", "マーガレット・ウィンクラー"],
+            "locations": ["ハリウッド", "ロサンゼルス"]
+          },
+          "audio": {
+            "bgm_tag": "uplifting",
+            "sfx": ["train whistle", "typewriter keys", "film projector", "1920s jazz music faint"]
+          },
+          "facts": [
+            { "type": "date", "value": "1923-07", "note": "ハリウッド到着" },
+            { "type": "number", "value": "40ドル", "note": "全財産" },
+            { "type": "number", "value": "1,500ドル", "note": "アリス・コメディ1本あたりの契約金" },
+            { "type": "date", "value": "1927", "note": "オズワルド・ザ・ラッキー・ラビット誕生" }
+          ],
+          "sources": [
+            { "title": "Walt Disney: An American Original", "author": "Bob Thomas", "year": "1976", "url": null, "note": "ハリウッド初期の詳細" },
+            { "title": "Disney's Land", "author": "Richard Snow", "year": "2019", "url": null, "note": "初期スタジオの様子" }
+          ],
+          "lesson": "契約書の細部に、運命が宿る。"
+        },
+        {
+          "id": "chapter4",
+          "title": "第4章: 奪われた兎と生まれた鼠 (1928)",
+          "time": { "start": "09:00", "end": "11:30", "duration_sec": 150 },
+          "narration": "1928年2月、ニューヨーク。\nウォルトは配給業者チャールズ・ミンツとの契約更改に臨んだ。\nオズワルドは人気だった。\n当然、条件は良くなると思っていた。\n\nしかしミンツが提示したのは、逆に減額された契約だった。\nそして衝撃の通告。\n「断れば、オズワルドの権利はこちらが持っていく」\n「君のアニメーターたちも、すでに我々と契約済みだ」\n\nウォルトは裏切られた。\n自分が生み出したキャラクターを奪われる。\n信頼していたスタッフの多くも、すでに寝返っていた。\n契約書を読まなかった自分の甘さを呪った。\n\n帰りの列車の中。\nウォルトは妻リリアンと、忠実なアブ・アイワークスに誓った。\n「もう二度と、キャラクターの権利を手放さない」\n\nその列車の中で、新しいキャラクターが生まれた。\n最初の名は「モーティマー・マウス」。\nリリアンが反対し、別の名を提案した。\n「ミッキー・マウスの方がいいわ」\n\n1928年5月、最初のミッキー短編「プレーン・クレイジー」が完成。\nしかし配給会社は見向きもしなかった。\n無名のネズミに誰も興味を示さない。\n\nウォルトは賭けに出る。\n最新技術「同期音声」を導入した第3作「蒸気船ウィリー」。\n1928年11月18日、ニューヨークのコロニー劇場で初公開。\n\n映画が始まった瞬間、劇場は沸いた。\nキャラクターの動きと音楽が完全に同期している。\nミッキーが口笛を吹き、船の汽笛が鳴る。\n観客は笑い、拍手を送った。\n\n同期音声アニメーション。\n世界初の快挙だった。\nミッキー・マウスは、一夜にしてスターとなった。\n\n奪われた兎は、伝説の鼠へと生まれ変わったのだ。",
+          "visual_cues": [
+            "1928年ニューヨーク、契約交渉室の重苦しい照明",
+            "列車内のクローズアップ、スケッチブック上に生まれるキャラクター",
+            "同期録音装置の精密な機械部分、劇的なスポットライト",
+            "満員の映画館、観客の顔に映る映写光",
+            "1920年代後半のアールデコ様式劇場内装"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第4章: 奪われた兎と生まれた鼠",
+            "dates": ["1928-02", "1928-05", "1928-11-18"],
+            "numbers": [],
+            "quotes": ["「もう二度と、キャラクターの権利を手放さない」"],
+            "people_first_appearance": ["チャールズ・ミンツ", "ミッキー・マウス"],
+            "locations": ["ニューヨーク", "コロニー劇場"]
+          },
+          "audio": {
+            "bgm_tag": "suspense",
+            "sfx": ["train rumble", "pencil scratching", "film projector", "1920s audience applause", "steamboat whistle"]
+          },
+          "facts": [
+            { "type": "date", "value": "1928-02", "note": "ミンツとの決裂" },
+            { "type": "date", "value": "1928-11-18", "note": "蒸気船ウィリー公開" },
+            { "type": "number", "value": "世界初", "note": "同期音声アニメーション" }
+          ],
+          "sources": [
+            { "title": "Walt Disney: The Triumph of the American Imagination", "author": "Neal Gabler", "year": "2006", "url": null, "note": "オズワルド喪失の詳細" },
+            { "title": "The Animated Man", "author": "Michael Barrier", "year": "2007", "url": null, "note": "ミッキー誕生の経緯" }
+          ],
+          "lesson": "最大の危機が、最高の創造を生む。"
+        },
+        {
+          "id": "chapter5",
+          "title": "第5章: 色彩革命と大恐慌 (1929–1934)",
+          "time": { "start": "11:30", "end": "14:00", "duration_sec": 150 },
+          "narration": "ミッキーの成功で、スタジオは急成長した。\nしかし1929年10月、ウォール街が崩壊する。\n大恐慌の始まりだった。\n\n全米の映画館が閉鎖され、娯楽産業は壊滅的打撃を受けた。\n多くのスタジオが倒産していく中、ウォルトは逆に投資を拡大した。\n「不況だからこそ、人々は夢を求める」\n彼はそう信じた。\n\n1932年、ウォルトは新技術「テクニカラー」3色法を導入する。\n短編「花と木」。\n世界初のフルカラーアニメーションだった。\n画面に溢れる色彩。\n観客は息を呑んだ。\n\nこの作品は、アカデミー短編アニメーション賞を受賞。\nウォルトにとって初のオスカーだった。\n\nしかし色彩技術は莫大なコストを要した。\n1本の短編に数千ドル。\n大恐慌下で、このギャンブルは危険だった。\nスタジオの財務は常に綱渡り状態。\n兄ロイが必死に資金繰りを続けた。\n\n1933年、「三匹の子豚」が公開される。\n「狼なんか怖くない」の歌は、大恐慌に苦しむアメリカ国民の希望の歌となった。\n興行的にも大成功。\nスタジオは何とか生き延びた。\n\n1934年までに、ディズニー・スタジオは年間48本の短編を制作。\n従業員は187人に達した。\nしかし短編だけでは限界があった。\n\nウォルトの頭には、ある壮大な計画が浮かんでいた。\n誰もが不可能と言う、あるプロジェクト。\n長編アニメーション映画。\n\n業界はそれを「ディズニーの愚行」と呼んだ。",
+          "visual_cues": [
+            "1929年ウォール街崩壊のニュース映像風、新聞の見出し",
+            "テクニカラー3色カメラの精密機械、革命的技術へのリスペクト",
+            "オスカー像に当たるスポットライト、1932年授賞式の雰囲気",
+            "財務書類と赤字の数字、厳しい照明",
+            "拡大したスタジオ、1930年代の活気ある制作現場"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第5章: 色彩革命と大恐慌",
+            "dates": ["1929-10", "1932", "1933", "1934"],
+            "numbers": ["800万ドル", "228万ドル", "9週間"],
+            "quotes": ["「不況だからこそ、人々は夢を求める」"],
+            "people_first_appearance": [],
+            "locations": ["ウォール街"]
+          },
+          "audio": {
+            "bgm_tag": "ambient",
+            "sfx": ["stock market bell", "typewriter", "film projector", "crowd murmur", "oscar applause"]
+          },
+          "facts": [
+            { "type": "date", "value": "1929-10", "note": "ウォール街崩壊、大恐慌開始" },
+            { "type": "date", "value": "1932", "note": "花と木、初のフルカラーアニメーション公開" },
+            { "type": "number", "value": "48本", "note": "1934年の年間短編制作数" },
+            { "type": "number", "value": "187人", "note": "1934年の従業員数" }
+          ],
+          "sources": [
+            { "title": "Walt Disney: An American Original", "author": "Bob Thomas", "year": "1976", "url": null, "note": "大恐慌期の経営" },
+            { "title": "The Animated Man", "author": "Michael Barrier", "year": "2007", "url": null, "note": "テクニカラー導入の詳細" }
+          ],
+          "lesson": "危機の中でこそ、イノベーションは生まれる。"
+        },
+        {
+          "id": "chapter6",
+          "title": "第6章: 白雪姫の賭け (1934–1937)",
+          "time": { "start": "14:00", "end": "16:30", "duration_sec": 150 },
+          "narration": "1934年、ウォルトは従業員を集めてある発表をした。\n「長編アニメーション映画を作る」\n「白雪姫と七人の小人」\n\n周囲は反対した。\n「観客は90分もアニメを見続けられない」\n「目が疲れる」\n「子ども向けの余興でしかない」\nハリウッドは冷笑した。\n\nしかしウォルトは譲らなかった。\n彼はスタッフに物語を熱く語った。\n感情を込め、涙を流しながら。\n「これは単なるアニメじゃない。人間ドラマだ」\n\n制作費は当初の25万ドルから膨れ上がり続けた。\n最終的に148万8422ドル。\n当時としては天文学的数字だった。\nスタジオは全財産を賭けた。\n失敗すれば、破産は確実。\n\n1936年、資金が尽きかけた。\nウォルトはバンク・オブ・アメリカに未完成のフィルムを持ち込む。\n担当者ジョセフ・ロゼンバーグは感動し、追加融資を決断した。\n\n750人のアーティストが3年間、昼夜を問わず作業を続けた。\n200万枚以上の絵が描かれた。\n新しい技術が次々と開発された。\nマルチプレーン・カメラ。\n奥行きと立体感を生み出す革新的装置。\n\n1937年12月21日、ハリウッドのカーセイ・サークル劇場。\nプレミア上映。\n\n映画が始まった。\n観客は息を呑んだ。\n画面に広がる美しい森。\n生き生きと動くキャラクターたち。\n感情を揺さぶる音楽。\n\n上映中、劇場のあちこちから嗚咽が聞こえた。\n大人たちが泣いていた。\nアニメーションで。\n\n終映後、スタンディングオベーション。\n拍手は10分以上続いた。\nウォルトは妻リリアンの肩で泣いた。\n\n「ディズニーの愚行」は、映画史を変える傑作となった。",
+          "visual_cues": [
+            "巨大なストーリーボード壁、何百ものスケッチがピンで留められている",
+            "1937年のセル画彩色部屋、北向き窓からの自然光",
+            "カーセイ・サークル劇場の夜景、サーチライトが夜空を貫く",
+            "マルチプレーン・カメラの精密機構、革新技術への畏敬",
+            "プレミア上映の観客反応、映写光が顔を照らす"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第6章: 白雪姫の賭け",
+            "dates": ["1934", "1936", "1937-12-21"],
+            "numbers": ["148万8422ドル", "750人", "200万枚", "3年間"],
+            "quotes": ["「これは単なるアニメじゃない。人間ドラマだ」"],
+            "people_first_appearance": ["ジョセフ・ロゼンバーグ"],
+            "locations": ["カーセイ・サークル劇場"]
+          },
+          "audio": {
+            "bgm_tag": "uplifting",
+            "sfx": ["pencil sketching", "animation camera crank", "audience sobbing", "standing ovation applause", "orchestral swell"]
+          },
+          "facts": [
+            { "type": "date", "value": "1937-12-21", "note": "白雪姫プレミア上映" },
+            { "type": "number", "value": "148万8422ドル", "note": "最終製作費" },
+            { "type": "number", "value": "750人", "note": "制作スタッフ数" },
+            { "type": "number", "value": "200万枚以上", "note": "描かれた絵の総数" }
+          ],
+          "sources": [
+            { "title": "The Fairest One of All", "author": "J.B. Kaufman", "year": "2012", "url": null, "note": "白雪姫制作の包括的記録" },
+            { "title": "Walt Disney: The Triumph of the American Imagination", "author": "Neal Gabler", "year": "2006", "url": null, "note": "制作過程と財政危機" }
+          ],
+          "lesson": "不可能と言われたことこそ、挑戦する価値がある。"
+        },
+        {
+          "id": "chapter7",
+          "title": "第7章: 黄金時代と暗雲 (1938–1941)",
+          "time": { "start": "16:30", "end": "19:00", "duration_sec": 150 },
+          "narration": "白雪姫は世界中で大ヒットした。\n興行収入800万ドル以上。\n製作費の5倍以上を稼ぎ出した。\nウォルトは一躍、ハリウッドの寵児となる。\n\n1940年、「ピノキオ」公開。\n技術的完成度はさらに高まった。\nしかし興行的には期待外れ。\nヨーロッパ市場が第二次世界大戦で閉鎖されたことが響いた。\n\n同年、「ファンタジア」。\nクラシック音楽とアニメーションの融合。\n革命的な実験作。\n立体音響システム「ファンタサウンド」まで開発した。\nしかしこれも興行的には失敗。\n製作費228万ドルに対し、初公開では回収できなかった。\n\n続いて「ダンボ」「バンビ」。\n芸術的には高く評価されたが、収益は低迷。\nスタジオの財務は急速に悪化した。\n\n1941年5月、事態は最悪の形で表面化する。\nスタジオ・ストライキ。\n従業員の約半数が労働組合を結成し、待遇改善を要求した。\n\nウォルトは衝撃を受けた。\n彼は従業員を「家族」と思っていた。\nしかし現実には、給与格差や長時間労働への不満が渦巻いていた。\n\nストは9週間続いた。\nスタジオは機能停止。\n制作は中断。\nウォルトと従業員の信頼関係は決定的に損なわれた。\n\n1941年12月7日、真珠湾攻撃。\nアメリカは第二次世界大戦に参戦。\nスタジオの大部分は軍に接収され、兵舎として使われた。\n\nウォルトは政府からの依頼で、軍事訓練用アニメや戦意高揚映画の制作に追われる。\n芸術的野心は後回し。\n生き延びるための選択だった。\n\n黄金時代は、あっという間に終わりを告げた。",
+          "visual_cues": [
+            "1940年代初頭の拡大したスタジオ施設、複数のサウンドステージ",
+            "ストライキのピケットライン、ドキュメンタリー風の厳しい照明",
+            "第二次大戦中の戦意高揚ポスター制作風景、政府契約資料",
+            "財務台帳の赤字数字、劇的な上方照明",
+            "軍に接収されたスタジオ、兵士たちが行き交う様子"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第7章: 黄金時代と暗雲",
+            "dates": ["1940", "1941-05", "1941-12-07"],
+            "numbers": ["800万ドル", "228万ドル", "9週間"],
+            "quotes": [],
+            "people_first_appearance": [],
+            "locations": ["真珠湾"]
+          },
+          "audio": {
+            "bgm_tag": "ambient",
+            "sfx": ["protest chants", "typewriter", "military march", "film projector", "crowd tension"]
+          },
+          "facts": [
+            { "type": "date", "value": "1940", "note": "ピノキオ、ファンタジア公開" },
+            { "type": "date", "value": "1941-05", "note": "スタジオ・ストライキ開始" },
+            { "type": "date", "value": "1941-12-07", "note": "真珠湾攻撃、第二次大戦参戦" },
+            { "type": "number", "value": "228万ドル", "note": "ファンタジア製作費" }
+          ],
+          "sources": [
+            { "title": "The Animated Man", "author": "Michael Barrier", "year": "2007", "url": null, "note": "労働争議の詳細" },
+            { "title": "Hollywood's Last Golden Age", "author": "David A. Cook", "year": "2000", "url": null, "note": "戦時下のハリウッド" }
+          ],
+          "lesson": "成功は、新たな試練の始まりでもある。"
+        },
+        {
+          "id": "chapter8",
+          "title": "第8章: 戦争と再起 (1942–1949)",
+          "time": { "start": "19:00", "end": "21:30", "duration_sec": 150 },
+          "narration": "戦時中、スタジオは政府からの依頼に追われた。\n軍事訓練用フィルム。\n戦意高揚アニメーション。\n利益はほとんど出ない。\nしかし、スタジオを存続させるためには必要だった。\n\n1943年までに、スタジオは68本の軍事関連作品を制作。\n従業員の94%が戦争関連の仕事に従事した。\n\nウォルトは深く傷ついていた。\nストライキの記憶。\n裏切られたという感情。\n彼は以前のような情熱を失っていた。\n\n1945年、戦争が終わる。\nスタジオは通常制作に戻るが、財務は壊滅的だった。\n戦時中の軍事契約では借金しか残らなかった。\n総負債は400万ドルを超えた。\n\n1946年、「メイク・マイン・ミュージック」。\n1948年、「メロディ・タイム」。\nいずれも短編を繋いだパッケージ作品。\nコストを抑えた妥協の産物だった。\n\n批評家は容赦なかった。\n「ディズニーは終わった」\n「黄金時代は二度と戻らない」\n\nウォルトは悩んだ。\nアニメーションだけでは限界があるのではないか。\n新しい方向性が必要だ。\n\n1948年、ある転機が訪れる。\n実写映画「シール・アイランド」の制作開始。\n自然ドキュメンタリー。\nアラスカのアザラシを追った作品だった。\n\n1949年公開。\n予想外の成功を収め、アカデミー短編ドキュメンタリー賞を受賞。\n\nウォルトは気づいた。\n自分の可能性は、アニメーションだけではない。\n実写、ドキュメンタリー、そして…。\n\n彼の頭には、もっと大きな夢が芽生え始めていた。",
+          "visual_cues": [
+            "第二次大戦中の戦意高揚ポスター制作、政府契約書類のクローズアップ",
+            "1940年代後半の財務台帳、赤字と借金の数字",
+            "アラスカのアザラシ撮影風景、自然ドキュメンタリーの新境地",
+            "空になったスタジオ、戦後の荒廃した雰囲気",
+            "実写カメラ機材、アニメーションからの転換"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第8章: 戦争と再起",
+            "dates": ["1942", "1943", "1945", "1948", "1949"],
+            "numbers": ["68本", "94%", "400万ドル"],
+            "quotes": ["「ディズニーは終わった」"],
+            "people_first_appearance": [],
+            "locations": ["アラスカ"]
+          },
+          "audio": {
+            "bgm_tag": "ambient",
+            "sfx": ["typewriter", "film projector", "seal calls", "ocean waves", "camera shutter"]
+          },
+          "facts": [
+            { "type": "date", "value": "1943", "note": "68本の軍事関連作品制作" },
+            { "type": "number", "value": "94%", "note": "戦争関連仕事に従事した従業員比率" },
+            { "type": "number", "value": "400万ドル", "note": "戦後の総負債額" },
+            { "type": "date", "value": "1949", "note": "シール・アイランド公開" }
+          ],
+          "sources": [
+            { "title": "Walt Disney: An American Original", "author": "Bob Thomas", "year": "1976", "url": null, "note": "戦時中の制作活動" },
+            { "title": "The Disney Films", "author": "Leonard Maltin", "year": "2000", "url": null, "note": "戦後作品の評価" }
+          ],
+          "lesson": "挫折は、新しい道を見出す契機となる。"
+        },
+        {
+          "id": "chapter9",
+          "title": "第9章: テレビと夢の王国 (1950–1955)",
+          "time": { "start": "21:30", "end": "24:00", "duration_sec": 150 },
+          "narration": "1950年、「シンデレラ」公開。\n8年ぶりの本格的長編アニメーション。\nスタジオの命運を賭けた作品だった。\n\n結果は大成功。\n世界興行収入は850万ドル。\nスタジオは財政危機から脱出した。\n\nしかしウォルトの視線は、すでに別の場所を向いていた。\nテレビ。\n\n当時のハリウッドは、テレビを敵視していた。\n「映画館から客を奪う悪魔の箱」\nしかしウォルトは違った。\n「テレビは味方にできる」\n\n1954年、「ディズニーランド」がABC系列で放送開始。\n毎週1時間の番組。\nウォルト自身がホストを務めた。\n\n番組は大ヒット。\n視聴率は常にトップクラス。\nそしてこの番組には、もう一つの目的があった。\n\nウォルトには、ある壮大な計画があった。\nテーマパーク。\n子どもと大人が一緒に楽しめる、今までにない場所。\n\n1952年、ウォルトは極秘でカリフォルニア州アナハイムの土地を買い始めた。\n総面積160エーカー。\nオレンジ畑だった場所。\n\n銀行は融資を断った。\n「遊園地は不衛生で下品だ」\n「すぐに飽きられる」\n兄ロイも反対した。\n\nしかしウォルトは自分の人生保険を担保に資金を調達。\nABCからも投資を引き出した。\nテレビ番組と引き換えに。\n\n1954年7月、建設開始。\n1年間で完成させる強行スケジュール。\n\n1955年7月17日、グランドオープン。\n招待客2万8000人。\nしかし偽造チケットで来場者は実際には3万人を超えた。\n\n当日は地獄だった。\n酷暑。\n水道管が破裂。\n飲料水が足りない。\nアトラクションは故障続き。\n報道陣は「ブラック・サンデー」と酷評した。\n\nしかし、一般公開が始まると状況は一変。\n人々は殺到した。\n初年度来客数、390万人。\n予想の2倍以上。\n\nウォルトの夢の王国は、現実のものとなった。",
+          "visual_cues": [
+            "1950年代のテレビスタジオセット、初期カラー放送カメラ",
+            "アナハイムのオレンジ畑航空写真、広大な未開発地",
+            "1955年7月17日、ディズニーランド入場ゲート、殺到する群衆",
+            "建設中のテーマパーク、重機と作業員、急ピッチの工事現場",
+            "オープニングデイのドキュメンタリー風映像、自然光撮影"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第9章: テレビと夢の王国",
+            "dates": ["1950", "1954", "1954-07", "1955-07-17"],
+            "numbers": ["850万ドル", "160エーカー", "2万8000人", "390万人"],
+            "quotes": ["「テレビは味方にできる」"],
+            "people_first_appearance": [],
+            "locations": ["アナハイム"]
+          },
+          "audio": {
+            "bgm_tag": "uplifting",
+            "sfx": ["television static", "construction machinery", "crowd excitement", "fireworks", "children laughing"]
+          },
+          "facts": [
+            { "type": "date", "value": "1950", "note": "シンデレラ公開" },
+            { "type": "date", "value": "1954", "note": "ディズニーランドTV番組開始" },
+            { "type": "date", "value": "1955-07-17", "note": "ディズニーランド開園" },
+            { "type": "number", "value": "160エーカー", "note": "パーク敷地面積" },
+            { "type": "number", "value": "390万人", "note": "初年度来場者数" }
+          ],
+          "sources": [
+            { "title": "Disney's Land", "author": "Richard Snow", "year": "2019", "url": null, "note": "ディズニーランド建設の詳細記録" },
+            { "title": "The Imagineering Story", "author": "Leslie Iwerks", "year": "2019", "url": "https://www.disneyplus.com/series/the-imagineering-story/", "note": "ドキュメンタリーシリーズ" }
+          ],
+          "lesson": "不可能を可能にするには、すべてを賭ける覚悟が要る。"
+        },
+        {
+          "id": "chapter10",
+          "title": "第10章: 最後の夢 (1960–1966)",
+          "time": { "start": "24:00", "end": "27:00", "duration_sec": 180 },
+          "narration": "1960年代、ウォルトは60代に入っていた。\nしかし彼の野心は衰えなかった。\nむしろ、加速していた。\n\n1964年、ニューヨーク万国博覧会。\nディズニーは4つの展示パビリオンを手がけた。\n「イッツ・ア・スモールワールド」\n「偉大なるアメリカ人」\n「カルーセル・オブ・プログレス」\n「マジック・スカイウェイ」\n\nこれらは後にディズニーランドの人気アトラクションとなる。\n\nしかしウォルトの頭には、さらに大きな計画があった。\nフロリダ・プロジェクト。\n\n1965年、秘密裏にフロリダ中部の土地を買収開始。\n総面積2万7000エーカー。\nディズニーランドの175倍。\n価格は500万ドル。\n\nウォルトが構想したのは、単なるテーマパークではなかった。\n「EPCOT」\nExperimental Prototype Community of Tomorrow。\n明日の実験的プロトタイプ都市。\n\n2万人が実際に住む未来都市。\n最新技術で運営される。\n自動車は地下を走り、地上は歩行者専用。\n廃棄物は地下トンネルで自動輸送。\n完全管理された理想郷。\n\nこれがウォルトの最後の、そして最大の夢だった。\n\n1966年11月、フロリダ・プロジェクトが正式発表される。\nウォルトは記者会見で熱く語った。\nしかしその姿は、痩せて疲れているように見えた。\n\n実は数ヶ月前から、彼は体調不良を訴えていた。\n咳が止まらない。\n左肺の痛み。\n\n1966年11月2日、検査の結果が出た。\n肺癌。\nすでに進行していた。\nウォルトは生涯、ヘビースモーカーだった。\n\n手術が行われたが、癌は左肺全体に広がっていた。\n医師は、余命わずかと告げた。\n\n11月30日、ウォルトは病院を退院。\nスタジオに戻り、フロリダ・プロジェクトの打ち合わせを続けた。\n病室の天井を見上げながら、EPCOTの都市計画を指で描いていたという。\n\n12月14日、ロイが病室を訪れた。\n兄弟は長い時間、二人だけで話した。\n内容は誰も知らない。\n\n1966年12月15日午前9時30分。\nウォルト・ディズニー、死去。\n享年65歳。\n\nフロリダの土地は、彼が一度も訪れることなく、そこに残された。\nEPCOTの完全な形は、実現されなかった。\n\nしかし彼が残した夢は、死後も拡大し続けた。\n1971年、ウォルト・ディズニー・ワールドが開園。\n兄ロイが命を削って完成させた。\n\nウォルトが描いた線は、今も世界中に広がり続けている。",
+          "visual_cues": [
+            "1965年フロリダ中部の湿地帯航空写真、広大な未開発地",
+            "EPCOTの都市計画図面、未来的デザインのスケッチ",
+            "1966年病室の窓からの眺め、柔らかな逆光",
+            "空になったクリエイティブオフィス、夕暮れ時のデスクランプ",
+            "未完のプロジェクト資料と個人的な写真が壁に"
+          ],
+          "overlays": {
+            "chapter_title_3s": "第10章: 最後の夢",
+            "dates": ["1964", "1965", "1966-11-02", "1966-12-15"],
+            "numbers": ["2万7000エーカー", "500万ドル", "2万人", "65歳"],
+            "quotes": [],
+            "people_first_appearance": [],
+            "locations": ["ニューヨーク", "フロリダ"]
+          },
+          "audio": {
+            "bgm_tag": "reflective",
+            "sfx": ["hospital monitor beep", "paper rustle", "distant city sounds", "clock ticking", "silence"]
+          },
+          "facts": [
+            { "type": "date", "value": "1965", "note": "フロリダ土地買収開始" },
+            { "type": "date", "value": "1966-12-15", "note": "ウォルト・ディズニー死去" },
+            { "type": "number", "value": "2万7000エーカー", "note": "フロリダ土地総面積" },
+            { "type": "number", "value": "65歳", "note": "享年" }
+          ],
+          "sources": [
+            { "title": "Project Future: The Inside Story Behind the Creation of Disney World", "author": "Chad Denver Emerson", "year": "2010", "url": null, "note": "フロリダ・プロジェクトの詳細" },
+            { "title": "Walt Disney: The Triumph of the American Imagination", "author": "Neal Gabler", "year": "2006", "url": null, "note": "晩年と死" }
+          ],
+          "lesson": "未完の夢こそが、最も強く後世に受け継がれる。"
+        },
+        {
+          "id": "ending",
+          "title": "エピローグ: 遺産",
+          "time": { "start": "27:00", "end": "30:00", "duration_sec": 180 },
+          "narration": "ウォルト・ディズニーが残したもの。\nそれは単なる娯楽企業ではない。\n\n彼は「夢」を産業にした。\nアニメーションを芸術に昇華させた。\nテーマパークという概念を創造した。\nマルチメディア展開のパイオニアとなった。\n\n今日、ディズニー社の時価総額は2000億ドルを超える。\n世界中に12のテーマパーク。\n年間来場者数は1億5000万人以上。\n\nしかし数字以上に重要なのは、彼が人々に与えたもの。\n\n「夢を信じる勇気」\n「不可能に挑戦する意志」\n「失敗から立ち上がる強さ」\n\nウォルトは何度も失敗した。\n裏切られ、奪われ、批判された。\nそれでも彼は止まらなかった。\n\n彼が語った言葉がある。\n「夢を実現する秘訣は、4つのCにある」\n「Curiosity(好奇心)」\n「Confidence(自信)」\n「Courage(勇気)」\n「Constancy(継続)」\n\nウォルト・ディズニー。\n1901年、貧しい農場に生まれた少年。\n2023年、その名は世界中のすべての世代に知られている。\n\n彼が描いた一枚の絵から始まった物語。\nそれは今も、世界中で新しい夢を生み続けている。\n\n城のシルエット。\n夕日に照らされて。\nそこには、終わらない物語がある。\n\nウォルトが残した最大の遺産。\nそれは、\n「すべては夢から始まる」\nという、シンプルな真実だった。",
+          "visual_cues": [
+            "テーマパークの城のシルエット、夕日の逆光で神秘的に",
+            "世界中のディズニーパーク空撮モンタージュ、統一された黄金時間の照明",
+            "ヴィンテージのアニメーションデスク、一つのランプが空白の紙を照らす",
+            "メタファーとしての構図、創造の原点への回帰",
+            "フィルムグレインとノスタルジックな色調で締めくくり"
+          ],
+          "overlays": {
+            "chapter_title_3s": "エピローグ: 遺産",
+            "dates": ["1901", "1966", "2023"],
+            "numbers": ["2000億ドル", "12", "1億5000万人"],
+            "quotes": ["「夢を実現する秘訣は、4つのCにある」", "「すべては夢から始まる」"],
+            "people_first_appearance": [],
+            "locations": []
+          },
+          "audio": {
+            "bgm_tag": "reflective",
+            "sfx": ["gentle wind", "distant children laughter", "film projector fade", "silence"]
+          },
+          "facts": [
+            { "type": "date", "value": "1901", "note": "ウォルト生誕" },
+            { "type": "date", "value": "1966", "note": "ウォルト死去" },
+            { "type": "number", "value": "2000億ドル", "note": "現代のディズニー社時価総額(参考値)" },
+            { "type": "number", "value": "1億5000万人", "note": "年間テーマパーク来場者数(参考値)" }
+          ],
+          "sources": [
+            { "title": "The Disney Company Annual Reports", "author": "The Walt Disney Company", "year": "2023", "url": "https://thewaltdisneycompany.com/investor-relations/", "note": "現代の企業規模" },
+            { "title": "Walt Disney: The Triumph of the American Imagination", "author": "Neal Gabler", "year": "2006", "url": null, "note": "総合的遺産評価" }
+          ],
+          "lesson": "遺産とは、後世が受け継ぐ夢である。"
+        }
+      ]
+    },
+    "seo": {
+      "titles": {
+        "emotional": "夢を奪われても諦めなかった男 ― ウォルト・ディズニーの21分",
+        "search_optimized": "ウォルト・ディズニー完全伝記【全10章・21分】奪われた兎と生まれた鼠の真実",
+        "alt_clickbait": "【衝撃】ディズニーが3回も破産しかけた理由…成功の裏に隠された壮絶人生"
+      },
+      "description": "ウォルト・ディズニー(1901–1966)の生涯を21分で完全網羅。貧しい農場の少年がいかにして世界的エンターテイメント帝国を築いたのか。オズワルド強奪事件からミッキー誕生、白雪姫の賭け、労働争議、ディズニーランド開園、そしてEPCOT構想まで。3度の倒産危機、裏切り、戦争、批判―すべてを乗り越えた創造者の真実。歴史的事実に基づき、具体的な日付・金額・証言を交えて描く本格ドキュメンタリー。成功と挫折、光と影。夢を信じ続けた男の、感動と教訓に満ちた人生の物語。",
+      "tags": [
+        "ウォルト・ディズニー",
+        "ディズニー伝記",
+        "ミッキー・マウス誕生秘話",
+        "白雪姫制作秘話",
+        "ディズニーランド建設",
+        "アニメーション史",
+        "アメリカン・ドリーム",
+        "実業家ドキュメンタリー",
+        "ハリウッド黄金時代",
+        "テーマパーク産業",
+        "創造者の人生",
+        "起業家精神",
+        "失敗から成功へ",
+        "オズワルド・ザ・ラッキー・ラビット",
+        "蒸気船ウィリー",
+        "EPCOT構想",
+        "歴史ドキュメンタリー",
+        "感動実話",
+        "20世紀アメリカ文化",
+        "教訓的伝記"
+      ],
+      "chapters_toc": [
+        { "title": "オープニング: 夢を描いた男の序章", "timestamp": "00:00" },
+        { "title": "第1章: 中西部の少年 (1901–1917)", "timestamp": "01:30" },
+        { "title": "第2章: 商業美術との出会い (1919–1922)", "timestamp": "04:00" },
+        { "title": "第3章: ハリウッドへの賭け (1923–1927)", "timestamp": "06:30" },
+        { "title": "第4章: 奪われた兎と生まれた鼠 (1928)", "timestamp": "09:00" },
+        { "title": "第5章: 色彩革命と大恐慌 (1929–1934)", "timestamp": "11:30" },
+        { "title": "第6章: 白雪姫の賭け (1934–1937)", "timestamp": "14:00" },
+        { "title": "第7章: 黄金時代と暗雲 (1938–1941)", "timestamp": "16:30" },
+        { "title": "第8章: 戦争と再起 (1942–1949)", "timestamp": "19:00" },
+        { "title": "第9章: テレビと夢の王国 (1950–1955)", "timestamp": "21:30" },
+        { "title": "第10章: 最後の夢 (1960–1966)", "timestamp": "24:00" },
+        { "title": "エピローグ: 遺産", "timestamp": "27:00" }
+      ]
+    }
+  }
+}
