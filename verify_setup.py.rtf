@@ -1,0 +1,168 @@
+{\rtf1\ansi\ansicpg932\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #!/usr/bin/env python3\
+"""\
+MakeShorts Environment Verification Script\
+------------------------------------------\
+\uc0\u12371 \u12398 \u12473 \u12463 \u12522 \u12503 \u12488 \u12399 \u12289 MakeShorts\u12503 \u12525 \u12472 \u12455 \u12463 \u12488 \u12398 \u29872 \u22659 \u12539 API\u35373 \u23450 \u12539 \
+\uc0\u12487 \u12451 \u12524 \u12463 \u12488 \u12522 \u27083 \u36896 \u12434 \u33258 \u21205 \u12481 \u12455 \u12483 \u12463 \u12375 \u12414 \u12377 \u12290 \
+"""\
+\
+import os\
+import json\
+import sys\
+import importlib.util\
+from pathlib import Path\
+from dotenv import load_dotenv\
+\
+# === \uc0\u35373 \u23450  ===\
+PROJECT_ROOT = Path(__file__).parent\
+CONFIG_DIR = PROJECT_ROOT / "config"\
+ZAP1_DIR = PROJECT_ROOT / "zap1"\
+ZAP2_DIR = PROJECT_ROOT / "zap2"\
+GEMINI_DIR = PROJECT_ROOT / "gemini_cli"\
+\
+ENV_PATH = CONFIG_DIR / ".env"\
+META_PATH = ZAP1_DIR / "outputs" / "meta.json"\
+\
+CHECKS = []\
+\
+\
+def check(title, condition, hint=None):\
+    """\uc0\u21336 \u19968 \u12481 \u12455 \u12483 \u12463 \u32080 \u26524 \u12434 \u35352 \u37682 """\
+    status = "\uc0\u9989  OK" if condition else "\u10060  FAIL"\
+    CHECKS.append(\{"\uc0\u38917 \u30446 ": title, "\u29366 \u24907 ": status, "\u35036 \u36275 ": hint or ""\})\
+    print(f"\{status\}  \{title\}")\
+    if hint and not condition:\
+        print(f"   \uc0\u8627  \{hint\}")\
+\
+\
+def verify_paths():\
+    """\uc0\u12487 \u12451 \u12524 \u12463 \u12488 \u12522 \u12539 \u12501 \u12449 \u12452 \u12523 \u27083 \u25104 \u30906 \u35469 """\
+    print("\\n\uc0\u55357 \u56514  Checking project structure...")\
+    check("config/ \uc0\u12487 \u12451 \u12524 \u12463 \u12488 \u12522 ", CONFIG_DIR.exists())\
+    check("gemini_cli/ \uc0\u12487 \u12451 \u12524 \u12463 \u12488 \u12522 ", GEMINI_DIR.exists())\
+    check("zap1/ \uc0\u12487 \u12451 \u12524 \u12463 \u12488 \u12522 ", ZAP1_DIR.exists())\
+    check("zap2/ \uc0\u12487 \u12451 \u12524 \u12463 \u12488 \u12522 ", ZAP2_DIR.exists())\
+    check(".env \uc0\u12501 \u12449 \u12452 \u12523 ", ENV_PATH.exists(), "config/.env \u12364 \u23384 \u22312 \u12375 \u12414 \u12379 \u12435 ")\
+    check("main.py \uc0\u12364 \u23384 \u22312 ", (PROJECT_ROOT / "main.py").exists())\
+    check("zap1/outputs/meta.json", META_PATH.exists(), "zap1_auto_generate.py \uc0\u12434 \u23455 \u34892 \u12375 \u12390 \u12367 \u12384 \u12373 \u12356 ")\
+\
+\
+def verify_env():\
+    """\uc0\u29872 \u22659 \u22793 \u25968 \u30906 \u35469 """\
+    print("\\n\uc0\u55357 \u56593  Checking environment variables...")\
+    load_dotenv(dotenv_path=ENV_PATH)\
+\
+    required_keys = [\
+        "GEMINI_API_KEY",\
+        "GCP_PROJECT_ID",\
+        "GCP_LOCATION",\
+        "GCP_SERVICE_ACCOUNT_FILE",\
+    ]\
+\
+    for key in required_keys:\
+        value = os.getenv(key)\
+        check(f"\{key\} \uc0\u12364 \u35373 \u23450 \u12373 \u12428 \u12390 \u12356 \u12427 ", bool(value), f"\{key\} \u12364  .env \u12395 \u12354 \u12426 \u12414 \u12379 \u12435 ")\
+\
+    # \uc0\u12469 \u12540 \u12499 \u12473 \u12450 \u12459 \u12454 \u12531 \u12488 \u12501 \u12449 \u12452 \u12523 \u12398 \u23384 \u22312 \u30906 \u35469 \
+    sa_file = os.getenv("GCP_SERVICE_ACCOUNT_FILE")\
+    if sa_file:\
+        sa_path = PROJECT_ROOT / sa_file\
+        check("\uc0\u12469 \u12540 \u12499 \u12473 \u12450 \u12459 \u12454 \u12531 \u12488 \u12501 \u12449 \u12452 \u12523 \u23384 \u22312 ", sa_path.exists(), f"\{sa_file\} \u12364 \u35211 \u12388 \u12363 \u12426 \u12414 \u12379 \u12435 ")\
+\
+\
+def verify_python_modules():\
+    """\uc0\u20027 \u35201 Python\u12514 \u12472 \u12517 \u12540 \u12523 \u30906 \u35469 """\
+    print("\\n\uc0\u55357 \u56333  Checking Python dependencies...")\
+    modules = [\
+        "dotenv",\
+        "google.cloud.aiplatform",\
+        "vertexai",\
+        "tqdm",\
+    ]\
+    for m in modules:\
+        if importlib.util.find_spec(m.split(".")[0]):\
+            check(f"\uc0\u12514 \u12472 \u12517 \u12540 \u12523  \{m\} \u12364 \u12452 \u12531 \u12473 \u12488 \u12540 \u12523 \u28168 \u12415 ", True)\
+        else:\
+            check(f"\uc0\u12514 \u12472 \u12517 \u12540 \u12523  \{m\}", False, f"pip install \{m\}")\
+\
+\
+def verify_meta_json():\
+    """meta.json\uc0\u12398 \u20869 \u23481 \u12434 \u30906 \u35469 """\
+    print("\\n\uc0\u55357 \u56523  Checking meta.json structure...")\
+    if META_PATH.exists():\
+        try:\
+            meta = json.loads(META_PATH.read_text(encoding="utf-8"))\
+            check("meta.json \uc0\u12364 \u26377 \u21177 \u12394 JSON\u24418 \u24335 ", True)\
+            check("title \uc0\u12364 \u23384 \u22312 ", "title" in meta)\
+            if "chapters" in meta and isinstance(meta["chapters"], list):\
+                sample = meta["chapters"][0]\
+                required_fields = ["title", "script_path", "voice_path", "images", "bgm"]\
+                for f in required_fields:\
+                    check(f"meta.chapters \uc0\u20869 \u12395  \{f\} \u12364 \u21547 \u12414 \u12428 \u12427 ", f in sample)\
+            else:\
+                check("meta.chapters \uc0\u27083 \u36896 ", False, "chapters\u37197 \u21015 \u12364 \u23384 \u22312 \u12375 \u12414 \u12379 \u12435 ")\
+        except Exception as e:\
+            check("meta.json \uc0\u35501 \u12415 \u36796 \u12415 ", False, str(e))\
+    else:\
+        check("meta.json \uc0\u23384 \u22312 ", False, "zap1_auto_generate.py \u23455 \u34892 \u24460 \u12395 \u29983 \u25104 \u12373 \u12428 \u12414 \u12377 ")\
+\
+\
+def verify_gcp_auth():\
+    """GCP\uc0\u35469 \u35388 \u24773 \u22577 \u30906 \u35469 """\
+    print("\\n\uc0\u9729 \u65039  Checking GCP authentication...")\
+    sa_file = os.getenv("GCP_SERVICE_ACCOUNT_FILE")\
+    if sa_file:\
+        sa_path = PROJECT_ROOT / sa_file\
+        if sa_path.exists():\
+            try:\
+                data = json.loads(sa_path.read_text())\
+                project_id = data.get("project_id")\
+                client_email = data.get("client_email")\
+                check("\uc0\u12469 \u12540 \u12499 \u12473 \u12450 \u12459 \u12454 \u12531 \u12488  JSON \u27083 \u36896 \u12364 \u27491 \u12375 \u12356 ", bool(project_id and client_email))\
+                check("project_id \uc0\u19968 \u33268 ", project_id == os.getenv("GCP_PROJECT_ID"))\
+            except json.JSONDecodeError:\
+                check("JSON\uc0\u24418 \u24335 \u12456 \u12521 \u12540 ", False, "\u12501 \u12449 \u12452 \u12523 \u12364 \u30772 \u25613 \u12375 \u12390 \u12356 \u12414 \u12377 ")\
+        else:\
+            check("\uc0\u12469 \u12540 \u12499 \u12473 \u12450 \u12459 \u12454 \u12531 \u12488 \u12501 \u12449 \u12452 \u12523 \u23384 \u22312 ", False)\
+\
+\
+def summary():\
+    """\uc0\u20840 \u20307 \u12469 \u12510 \u12522 """\
+    print("\\n\uc0\u55358 \u56830  Summary Report")\
+    print("-" * 60)\
+    ok = sum(1 for c in CHECKS if "OK" in c["\uc0\u29366 \u24907 "])\
+    fail = sum(1 for c in CHECKS if "FAIL" in c["\uc0\u29366 \u24907 "])\
+    print(f"\uc0\u9989  \u25104 \u21151 : \{ok\} / \u10060  \u22833 \u25943 : \{fail\}")\
+    print("-" * 60)\
+\
+    if fail == 0:\
+        print("\uc0\u55356 \u57225  \u12377 \u12409 \u12390 \u12398 \u35373 \u23450 \u12364 \u27491 \u12375 \u12367 \u25972 \u12387 \u12390 \u12356 \u12414 \u12377 \u65281 MakeShorts\u12399 \u23455 \u34892 \u21487 \u33021 \u12391 \u12377 \u12290 ")\
+    else:\
+        print("\uc0\u9888 \u65039  \u12356 \u12367 \u12388 \u12363 \u12398 \u35373 \u23450 \u12395 \u21839 \u38988 \u12364 \u12354 \u12426 \u12414 \u12377 \u12290 \u19978 \u35352 \u12434 \u20462 \u27491 \u12375 \u12390 \u12367 \u12384 \u12373 \u12356 \u12290 ")\
+\
+    # \uc0\u12524 \u12509 \u12540 \u12488 \u12501 \u12449 \u12452 \u12523 \u20986 \u21147 \
+    report_path = PROJECT_ROOT / "verify_report.json"\
+    report_path.write_text(json.dumps(CHECKS, ensure_ascii=False, indent=2))\
+    print(f"\\n\uc0\u55357 \u56786 \u65039  \u26908 \u35388 \u12524 \u12509 \u12540 \u12488 \u12434  \{report_path\} \u12395 \u20986 \u21147 \u12375 \u12414 \u12375 \u12383 \u12290 ")\
+\
+\
+def main():\
+    print("\uc0\u55357 \u56589  MakeShorts Environment Verification")\
+    verify_paths()\
+    verify_env()\
+    verify_python_modules()\
+    verify_meta_json()\
+    verify_gcp_auth()\
+    summary()\
+\
+\
+if __name__ == "__main__":\
+    main()\
+}

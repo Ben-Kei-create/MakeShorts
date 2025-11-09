@@ -11,26 +11,16 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from dotenv import load_dotenv
 
 
-def _load_private_api_config() -> Dict[str, Any]:
-    """Read optional API configuration from `private_settings.py`."""
 
-    try:
-        from private_settings import API_CONFIG  # type: ignore
-    except ImportError:
-        return {}
-
-    if not isinstance(API_CONFIG, dict):  # pragma: no cover - defensive guard
-        raise TypeError("API_CONFIG must be a dictionary in private_settings.py")
-
-    return {key: value for key, value in API_CONFIG.items() if value not in (None, "")}
-
-try:  # pragma: no cover - optional dependency
-    from openai import OpenAI
-except ImportError:  # pragma: no cover - runtime guard
-    OpenAI = None  # type: ignore
+try:
+    import vertexai
+    from google.oauth2 import service_account
+    from vertexai.generative_models import GenerativeModel
+    from config.config import settings
+except ImportError:
+    vertexai = None
 
 PROMPT_TEMPLATE = textwrap.dedent(
     """
@@ -124,7 +114,7 @@ class GenerationResult:
 
 
 class TextModelClient:
-    """Wrapper around the OpenAI Responses API with environment-based configuration."""
+    """Wrapper around the Vertex AI API with configuration from config.py."""
 
     def __init__(
         self,
@@ -132,41 +122,24 @@ class TextModelClient:
         model: Optional[str] = None,
         temperature: float = 0.2,
     ) -> None:
-        load_dotenv()
-        private_config = _load_private_api_config()
+        if vertexai is None:
+            raise RuntimeError("google-cloud-aiplatform パッケージがインストールされていません。requirements.txt を確認してください。")
 
-        self.api_key = (
-            private_config.get("openai_api_key")
-            or os.getenv("OPENAI_API_KEY")
-            or os.getenv("GENAI_API_KEY")
-        )
-        self.base_url = private_config.get(
-            "openai_base_url", os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-        )
-        self.model = (
-            model
-            or private_config.get("openai_model")
-            or os.getenv("OPENAI_MODEL")
-            or "gpt-4.1"
-        )
+        credentials = service_account.Credentials.from_service_account_file(settings.SERVICE_ACCOUNT_FILE)
+        vertexai.init(project=settings.PROJECT_ID, location=settings.LOCATION, credentials=credentials)
 
-        private_temp = private_config.get("openai_temperature")
-        self.temperature = float(private_temp) if private_temp is not None else temperature
-
-        if OpenAI is None:
-            raise RuntimeError("openai パッケージがインストールされていません。requirements.txt を確認してください。")
-        if not self.api_key:
-            raise RuntimeError("OPENAI_API_KEY (または GENAI_API_KEY) が環境変数に設定されていません。")
-
-        self._client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+        self.model = model or "gemini-pro"
+        self.temperature = temperature
 
     def generate_package(self, prompt: str) -> str:
-        response = self._client.responses.create(
-            model=self.model,
-            temperature=self.temperature,
-            input=prompt,
+        model = GenerativeModel(self.model)
+        response = model.generate_content(
+            prompt,
+            generation_config={
+                "temperature": self.temperature,
+            }
         )
-        return response.output_text  # type: ignore[no-any-return]
+        return response.text
 
 
 class ShortsPackageGenerator:

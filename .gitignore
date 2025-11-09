@@ -3,10 +3,21 @@ config.py
 private_settings.py
 credentials/*
 !credentials/.gitkeep
+zap1/makeshorts-477014-fb3e71c2c530.json # Google Cloud Service Account Key - DO NOT COMMIT
 
 # Generated packages & outputs
 output/*
 !output/.gitkeep
+zap1/bgm/
+zap1/input_images/
+zap1/meta.json
+zap1/output/
+zap1/outputs/
+zap1/templates/
+zap1/test_output/
+zap1/voice/
+zap1/*.ccproj
+zap1/*.csv
 
 # Environment files
 .env
@@ -17,6 +28,10 @@ config/.env
 __pycache__/
 *.py[cod]
 *$py.class
+gemini_cli/__pycache__/
+gemini_cli/cache/
+config/__pycache__/
+zap2/__pycache__/
 
 # Virtual environments
 .envrc
